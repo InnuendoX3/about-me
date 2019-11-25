@@ -30,11 +30,11 @@ $break-x-large: 1200px;
    padding: 0;
 }
 
-body {
-   p {
-      font-size: 22px;
-   }
+
+p {
+   font-size: 22px;
 }
+
 
 
 .backg-1 {
@@ -58,18 +58,27 @@ body {
       justify-content: flex-end;
       align-items: center;
       height: 75%;
-      span {
+      div {
          position: relative;
+         width: 370px;
+         height: auto;
 
       }
-      #myname {
+      #title-1 {
          //background-color: white;
-         font-size: 35px;
-      }
-      #johan {
-         font-size: 45px;
+         font-size: 20px;
+         background-color: black;
          color: white;
       }
+      #title-2 {
+         font-size: 35px;
+      }
+      #title-3 {
+         font-size: 20px;
+         background-color: black;
+         color: white;
+      }
+
    }
 }
 
