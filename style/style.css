@@ -1,0 +1,30 @@
+.backg-3, .backg-2, .backg-1 {
+  position: relative;
+  opacity: 0.9;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.backg-1 {
+  background-image: url("../images/Hallonbergen.jpg");
+}
+
+.backg-2 {
+  background-image: url("../images/YoBici.jpg");
+  height: 60vh;
+  filter: sepia(1);
+}
+
+.backg-3 {
+  background-image: url("../images/FannyKiran.jpg");
+}
+
+/*# sourceMappingURL=style.css.map */
