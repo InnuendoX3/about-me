@@ -12,9 +12,19 @@
   align-items: center;
 }
 
+#learn-container #learning {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+body p {
+  font-size: 22px;
 }
 
 .backg-1 {
@@ -54,7 +64,79 @@
 .presentation p {
   width: 700px;
   color: white;
-  font-size: 22px;
+}
+
+#learn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+  padding: 30px 0px;
+}
+#learn-container #learning {
+  height: 100px;
+}
+#learn-container #learning div {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#learn-container #learning div img {
+  width: 40px;
+  margin: 5px;
+  transition: 0.25s;
+  opacity: 0.5;
+}
+#learn-container #learning div img:hover {
+  width: 60px;
+  opacity: 1;
+}
+#learn-container #learning div .hooover {
+  width: 60px;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  #learn-container #learning {
+    height: 80px;
+  }
+  #learn-container #learning div {
+    width: 63px;
+    height: 63px;
+  }
+  #learn-container #learning div img {
+    width: 40px;
+    margin: 4px;
+  }
+  #learn-container #learning div img:hover {
+    width: 60px;
+  }
+  #learn-container #learning div .hooover {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #learn-container #learning {
+    height: 50px;
+    min-width: 320px;
+    justify-content: space-evenly;
+  }
+  #learn-container #learning div {
+    width: 10px;
+    height: 10px;
+  }
+  #learn-container #learning div img {
+    width: 25px;
+    margin: 1px;
+  }
+  #learn-container #learning div img:hover {
+    width: 40px;
+  }
+  #learn-container #learning div .hooover {
+    width: 40px;
+  }
 }
 
 .backg-2 {
