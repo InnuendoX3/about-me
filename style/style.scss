@@ -30,9 +30,17 @@ $break-x-large: 1200px;
    padding: 0;
 }
 
-
 p {
+   width: 700px;
+   font-family: 'Montserrat', sans-serif;
    font-size: 22px;
+   color: #ffffff;
+   text-align: justify;
+   
+   a {
+      text-decoration: none;
+      color: #ffffff;
+   }
 }
 
 
@@ -50,7 +58,6 @@ p {
       height: 100vh;
       background-image: url("../images/Hallonbergen.jpg");
       @extend %backgr-parallax;
-      //filter: blur(2px);
    }
    div {
       display: flex;
@@ -62,10 +69,8 @@ p {
          position: relative;
          width: 370px;
          height: auto;
-
       }
       #title-1 {
-         //background-color: white;
          font-size: 20px;
          background-color: black;
          color: white;
@@ -74,23 +79,18 @@ p {
          font-size: 35px;
       }
       #title-3 {
-         font-size: 20px;
+         font-family: 'Dancing Script', cursive;         
+         font-size: 32px;
          background-color: black;
          color: white;
       }
-
    }
 }
 
-.presentation {
+.content {
    @extend %flex-center-center;
    height: 50vh;
-   background-color: black;
-
-   p {
-      width: 700px;
-      color: white;
-   }
+   background-color: #000000fa;
 }
 
 #learn-container {
@@ -100,6 +100,11 @@ p {
    align-items: center;
    height: 50vh;
    padding: 30px 0px;
+
+   p {
+      text-align: center;
+      color: #000000;
+   }
 
    #learning {
       @extend %flex-around-center;
@@ -161,9 +166,22 @@ p {
             }
          }
       }
-
    }
+}
 
+#corchetes {
+   display: flex;
+   align-items: center;
+   span {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 50px;
+      color: #8f8f8f
+   }
+   #learning-here {
+      text-align: center;
+      font-size: 30px;
+      width: 180px;
+   }
 }
 
 .backg-2 {

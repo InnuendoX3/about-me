@@ -6,7 +6,7 @@
   background-size: cover;
 }
 
-.presentation, .backg-1 {
+.content, .backg-1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,15 @@
 }
 
 p {
+  width: 700px;
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
+  color: #ffffff;
+  text-align: justify;
+}
+p a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .backg-1 {
@@ -60,18 +68,15 @@ p {
   font-size: 35px;
 }
 .backg-1 div #title-3 {
-  font-size: 20px;
+  font-family: "Dancing Script", cursive;
+  font-size: 32px;
   background-color: black;
   color: white;
 }
 
-.presentation {
+.content {
   height: 50vh;
-  background-color: black;
-}
-.presentation p {
-  width: 700px;
-  color: white;
+  background-color: #000000fa;
 }
 
 #learn-container {
@@ -81,6 +86,10 @@ p {
   align-items: center;
   height: 50vh;
   padding: 30px 0px;
+}
+#learn-container p {
+  text-align: center;
+  color: #000000;
 }
 #learn-container #learning {
   height: 100px;
@@ -145,6 +154,21 @@ p {
   #learn-container #learning div .hooover {
     width: 40px;
   }
+}
+
+#corchetes {
+  display: flex;
+  align-items: center;
+}
+#corchetes span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  color: #8f8f8f;
+}
+#corchetes #learning-here {
+  text-align: center;
+  font-size: 30px;
+  width: 180px;
 }
 
 .backg-2 {
