@@ -1,4 +1,4 @@
-.backg-3, .backg-2, .backg-1:before {
+.backg-2, .backg-1:before {
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -149,13 +149,8 @@ p {
 
 .backg-2 {
   background-image: url("../images/YoBici.jpg");
-  height: 60vh;
+  height: 40vh;
   filter: sepia(1);
-}
-
-.backg-3 {
-  height: 100vh;
-  background-image: url("../images/FannyKiran.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */
