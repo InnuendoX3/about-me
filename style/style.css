@@ -84,13 +84,42 @@ p a {
 
 .backg-2 {
   background-image: url("../images/YoBici.jpg");
-  height: 40vh;
+  height: 20vh;
   filter: sepia(1);
 }
 
 .content {
   height: 50vh;
   background-color: #000000fa;
+}
+
+#contact {
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+#contact div {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  #contact div {
+    width: 60%;
+  }
+}
+
+#icon-mail {
+  height: 45px;
+}
+
+#icon-linked {
+  height: 40px;
+}
+
+#icon-github {
+  height: 38px;
 }
 
 #corchetes {
