@@ -24,11 +24,28 @@
 }
 
 p {
-  width: 700px;
+  max-width: 700px;
+  margin: 0px 40px;
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
+  line-height: 1.6;
   color: #ffffff;
   text-align: justify;
+}
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  p {
+    font-size: 16px;
+  }
 }
 p a {
   text-decoration: none;
@@ -59,24 +76,67 @@ p a {
   width: 370px;
   height: auto;
 }
-.backg-1 div #title-1 {
-  font-size: 20px;
-  background-color: black;
-  color: white;
+@media screen and (max-width: 400px) {
+  .backg-1 div div {
+    width: 300px;
+  }
 }
-.backg-1 div #title-2 {
-  font-size: 35px;
-}
-.backg-1 div #title-3 {
-  font-family: "Dancing Script", cursive;
-  font-size: 32px;
-  background-color: black;
-  color: white;
+
+.backg-2 {
+  background-image: url("../images/YoBici.jpg");
+  height: 40vh;
+  filter: sepia(1);
 }
 
 .content {
   height: 50vh;
   background-color: #000000fa;
+}
+
+#corchetes {
+  display: flex;
+  align-items: center;
+}
+#corchetes span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  color: #8f8f8f;
+}
+#corchetes #learning-here {
+  text-align: center;
+  font-size: 30px;
+  width: 180px;
+}
+@media screen and (max-width: 576px) {
+  #corchetes #learning-here {
+    font-size: 26px;
+    width: 180px;
+    margin: 10px 0px;
+  }
+}
+
+#title-1 {
+  font-size: 20px;
+  padding: 5px 0px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#title-2 {
+  font-size: 35px;
+}
+@media screen and (max-width: 400px) {
+  #title-2 {
+    font-size: 28px;
+  }
+}
+
+#title-3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 32px;
+  padding: 5px 0px;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 #learn-container {
@@ -85,7 +145,6 @@ p a {
   justify-content: space-evenly;
   align-items: center;
   height: 50vh;
-  padding: 30px 0px;
 }
 #learn-container p {
   text-align: center;
@@ -154,27 +213,6 @@ p a {
   #learn-container #learning div .hooover {
     width: 40px;
   }
-}
-
-#corchetes {
-  display: flex;
-  align-items: center;
-}
-#corchetes span {
-  font-family: "Montserrat", sans-serif;
-  font-size: 50px;
-  color: #8f8f8f;
-}
-#corchetes #learning-here {
-  text-align: center;
-  font-size: 30px;
-  width: 180px;
-}
-
-.backg-2 {
-  background-image: url("../images/YoBici.jpg");
-  height: 40vh;
-  filter: sepia(1);
 }
 
 /*# sourceMappingURL=style.css.map */

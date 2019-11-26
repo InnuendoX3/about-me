@@ -1,4 +1,5 @@
 // Responsive breakpoints
+$break-x-small: 400px;
 $break-small: 576px;
 $break-medium: 768px;
 $break-large: 992px;
@@ -31,19 +32,29 @@ $break-x-large: 1200px;
 }
 
 p {
-   width: 700px;
+   max-width: 700px;
+   margin: 0px 40px;
    font-family: 'Montserrat', sans-serif;
    font-size: 22px;
+   line-height: 1.6;
    color: #ffffff;
    text-align: justify;
+
+   @media screen and (max-width: $break-medium) {
+      font-size: 20px;
+   }
+   @media screen and (max-width: $break-small) {
+      font-size: 18px;
+   }
+   @media screen and (max-width: $break-x-small) {
+      font-size: 16px;
+   }
    
    a {
       text-decoration: none;
       color: #ffffff;
    }
 }
-
-
 
 .backg-1 {
    height: 100vh;
@@ -67,24 +78,22 @@ p {
       height: 75%;
       div {
          position: relative;
-         width: 370px;
+         width: 370px; // Taken from the tittle-2 width
          height: auto;
+         @media screen and (max-width: $break-x-small) {
+            width: 300px;
+         }
       }
-      #title-1 {
-         font-size: 20px;
-         background-color: black;
-         color: white;
-      }
-      #title-2 {
-         font-size: 35px;
-      }
-      #title-3 {
-         font-family: 'Dancing Script', cursive;         
-         font-size: 32px;
-         background-color: black;
-         color: white;
-      }
+      
    }
+}
+
+
+.backg-2 {
+   background-image: url("../images/YoBici.jpg");
+   height: 40vh;
+   filter: sepia(1);
+   @extend %backgr-parallax;
 }
 
 .content {
@@ -93,13 +102,54 @@ p {
    background-color: #000000fa;
 }
 
+#corchetes {
+   display: flex;
+   align-items: center;
+   span {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 50px;
+      color: #8f8f8f
+   }
+   #learning-here {
+      text-align: center;
+      font-size: 30px;
+      width: 180px;
+      @media screen and (max-width: $break-small) {
+         font-size: 26px;
+         width: 180px;
+         margin: 10px 0px;
+      }
+   }
+}
+
+
+#title-1 {
+   font-size: 20px;
+   padding: 5px 0px;
+   background-color: #000000;
+   color: #ffffff;
+}
+#title-2 {
+   font-size: 35px;
+   @media screen and (max-width: $break-x-small) {
+      font-size: 28px;
+   }
+}
+#title-3 {
+   font-family: 'Dancing Script', cursive;         
+   font-size: 32px;
+   padding: 5px 0px;
+   background-color: #000000;
+   color: #ffffff;
+}
+
 #learn-container {
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
    align-items: center;
    height: 50vh;
-   padding: 30px 0px;
+   //padding: 30px 0px;
 
    p {
       text-align: center;
@@ -169,27 +219,7 @@ p {
    }
 }
 
-#corchetes {
-   display: flex;
-   align-items: center;
-   span {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 50px;
-      color: #8f8f8f
-   }
-   #learning-here {
-      text-align: center;
-      font-size: 30px;
-      width: 180px;
-   }
-}
 
-.backg-2 {
-   background-image: url("../images/YoBici.jpg");
-   height: 40vh;
-   filter: sepia(1);
-   @extend %backgr-parallax;
-}
 
 
 
