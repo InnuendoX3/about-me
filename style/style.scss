@@ -194,7 +194,8 @@ p {
    font-family: 'Times New Roman', Times, serif;
    font-size: 34px;
    @media screen and (max-width: $break-x-small) {
-      font-size: 27px;
+      font-size: 26px;
+      background-color: #ffffff59;
    }
 }
 #title-3 {

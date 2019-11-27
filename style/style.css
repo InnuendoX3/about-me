@@ -191,7 +191,8 @@ p a {
 }
 @media screen and (max-width: 400px) {
   #title-2 {
-    font-size: 27px;
+    font-size: 26px;
+    background-color: #ffffff59;
   }
 }
 
