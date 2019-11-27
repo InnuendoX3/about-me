@@ -93,12 +93,9 @@ p {
 
 .backg-2 {
    background-image: url("../images/YoBici.jpg");
-   height: 20vh;
+   height: 75vh;
    filter: contrast(125%) brightness(73%) sepia(100%);
    @extend %backgr-parallax;
-   @media screen and (max-width: $break-small) {
-      height: 75vh;
-   }
 }
 
 .content {
