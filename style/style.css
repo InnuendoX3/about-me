@@ -178,6 +178,7 @@ p a {
 }
 
 #title-1 {
+  font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   padding: 5px 0px;
   background-color: #000000;
@@ -185,7 +186,8 @@ p a {
 }
 
 #title-2 {
-  font-size: 35px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 34px;
 }
 @media screen and (max-width: 400px) {
   #title-2 {
