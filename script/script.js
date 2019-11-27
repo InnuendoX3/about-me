@@ -1,3 +1,4 @@
+$(document).ready(function() {
 
    let learning = [
       "HTML",
@@ -26,3 +27,5 @@
       });
    }
    infinite();
+   
+});
