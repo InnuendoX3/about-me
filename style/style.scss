@@ -98,6 +98,9 @@ p {
    height: 20vh;
    filter: contrast(125%) brightness(73%) sepia(100%);
    @extend %backgr-parallax;
+   @media screen and (max-width: $break-small) {
+      height: 75vh;
+   }
 }
 
 .content {
@@ -153,7 +156,6 @@ p {
          }
       }
    }
-
 }
 
 
@@ -190,7 +192,7 @@ p {
 #title-2 {
    font-size: 35px;
    @media screen and (max-width: $break-x-small) {
-      font-size: 28px;
+      font-size: 27px;
    }
 }
 #title-3 {

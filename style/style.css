@@ -90,6 +90,11 @@ p a {
   height: 20vh;
   filter: contrast(125%) brightness(73%) sepia(100%);
 }
+@media screen and (max-width: 576px) {
+  .backg-2 {
+    height: 75vh;
+  }
+}
 
 .content {
   height: 50vh;
@@ -184,7 +189,7 @@ p a {
 }
 @media screen and (max-width: 400px) {
   #title-2 {
-    font-size: 28px;
+    font-size: 27px;
   }
 }
 
