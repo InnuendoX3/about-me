@@ -93,7 +93,7 @@ p a {
 
 .content {
   height: 50vh;
-  background-color: #000000fa;
+  background-color: rgba(0, 0, 0, 0.98);
 }
 
 #contact {
@@ -183,7 +183,7 @@ p a {
 #title-2 {
   font-family: "Times New Roman", Times, serif;
   font-size: 34px;
-  background-color: #ffffff73;
+  background-color: rgba(255, 255, 255, 0.451);
 }
 @media screen and (max-width: 400px) {
   #title-2 {

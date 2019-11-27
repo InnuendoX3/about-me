@@ -104,7 +104,7 @@ p {
 .content {
    @extend %flex-center-center;
    height: 50vh;
-   background-color: #000000fa;
+   background-color: rgba(0, 0, 0, 0.98); // Edge supported
 }
 
 
@@ -189,7 +189,7 @@ p {
 #title-2 {
    font-family: 'Times New Roman', Times, serif;
    font-size: 34px;
-   background-color: #ffffff73;
+   background-color: rgba(255, 255, 255, 0.451); // Edge supported
    @media screen and (max-width: $break-x-small) {
       font-size: 26px;
    }
