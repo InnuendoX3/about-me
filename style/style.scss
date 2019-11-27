@@ -66,7 +66,7 @@ p {
    @extend %flex-center-center;
 
    &:before {
-      opacity: 0.8;
+      //opacity: 0.9;
       content: "";
       position: absolute;
       width: 100%;
@@ -96,7 +96,7 @@ p {
 .backg-2 {
    background-image: url("../images/YoBici.jpg");
    height: 20vh;
-   filter: sepia(1);
+   filter: contrast(125%) brightness(73%) sepia(100%);
    @extend %backgr-parallax;
 }
 
@@ -166,7 +166,7 @@ p {
    span {
       font-family: 'Montserrat', sans-serif;
       font-size: 50px;
-      color: #8f8f8f
+      color: #575757
    }
    #learning-here {
       text-align: center;
@@ -207,7 +207,9 @@ p {
    justify-content: space-evenly;
    align-items: center;
    height: 50vh;
-   //padding: 30px 0px;
+   background: #ffffff;
+   //background-image: url("../images/hojas.jpg");
+   //@extend %backgr-parallax;
 
    p {
       text-align: center;
