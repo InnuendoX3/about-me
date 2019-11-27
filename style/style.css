@@ -183,11 +183,11 @@ p a {
 #title-2 {
   font-family: "Times New Roman", Times, serif;
   font-size: 34px;
+  background-color: #ffffff73;
 }
 @media screen and (max-width: 400px) {
   #title-2 {
     font-size: 26px;
-    background-color: #ffffff59;
   }
 }
 
@@ -261,8 +261,8 @@ p a {
     justify-content: space-evenly;
   }
   #learn-container #learning div {
-    width: 10px;
-    height: 10px;
+    width: 35px;
+    height: 35px;
   }
   #learn-container #learning div img {
     width: 25px;
