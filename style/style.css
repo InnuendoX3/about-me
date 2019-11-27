@@ -23,6 +23,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   max-width: 700px;
   margin: 0px 40px;
@@ -95,8 +99,11 @@ p a {
 
 #contact {
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   height: 100vh;
+}
+#contact p {
+  text-align: center;
 }
 #contact div {
   width: 300px;
@@ -109,17 +116,39 @@ p a {
     width: 60%;
   }
 }
-
-#icon-mail {
+#contact div #icon-mail {
   height: 45px;
 }
-
-#icon-linked {
+#contact div #icon-linked {
   height: 40px;
 }
-
-#icon-github {
+#contact div #icon-github {
   height: 38px;
+}
+#contact a span {
+  height: 80px;
+}
+#contact a span #icon-up {
+  height: 20px;
+  align-self: flex-end;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+#contact a span .bounce {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 #corchetes {
