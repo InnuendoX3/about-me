@@ -78,15 +78,13 @@ p {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      align-items: center;
+      align-items: stretch;
       height: 75%;
       div {
+         text-align: center;
          position: relative;
-         width: 370px; // Taken from the tittle-2 width
+         //width: 370px; // Taken from the tittle-2 width
          height: auto;
-         @media screen and (max-width: $break-x-small) {
-            width: 300px;
-         }
       }
       
    }
@@ -108,6 +106,8 @@ p {
    height: 50vh;
    background-color: #000000fa;
 }
+
+
 #contact {
    flex-direction: column;
    justify-content: space-around;
@@ -157,10 +157,6 @@ p {
       }
    }
 }
-
-
-
-
 
 #corchetes {
    display: flex;
