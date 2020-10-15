@@ -1,3 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-white {
+  color: white
+}
+
+.titles {
+  font-size: 35px;
+}
+@media screen and (max-width: 768px) {
+  .titles {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .titles {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .titles {
+    font-size: 22px;
+  }
+}
+
 .backg-2, .backg-1:before {
   position: relative;
   background-attachment: fixed;
@@ -16,11 +48,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 html {
@@ -87,8 +114,16 @@ p a {
 }
 
 .content {
+  flex-direction: column;
   height: 50vh;
   background-color: rgba(0, 0, 0, 0.98);
+}
+.content2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+  background-color: #aaa;
 }
 
 #contact {
@@ -269,6 +304,29 @@ p a {
   #learn-container #learning div .hooover {
     width: 40px;
   }
+}
+
+.portafolio-image {
+  height: 100%;
+  margin: 5px;
+}
+.portafolio-image-anchor {
+  height: 80%;
+  margin: 5px;
+}
+@media screen and (max-width: 576px) {
+  .portafolio-image-anchor {
+    height: 70%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .portafolio-image-anchor {
+    height: 60%;
+  }
+}
+
+.my-link {
+  color: #f89406
 }
 
 /*# sourceMappingURL=style.css.map */
