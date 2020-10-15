@@ -4,12 +4,11 @@ $(document).ready(function() {
       "HTML",
       "CSS",
       "JavaScript",
-      "JQuery",
+      "NodeJS",
+      "MongoDB",
       "Git",
       "GitHub",
-      "Bootstrap",
-      "Sass",
-      "JSON"
+      "Bootstrap"
    ];
 
    // Do effects on each learning item (zoom // show name) Infinite loop.
