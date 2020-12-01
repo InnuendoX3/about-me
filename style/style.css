@@ -9,26 +9,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-.font-white {
-  color: white
-}
-
-
-/* Nueva */
-.flex-center-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-}
-
-#learn-container #learning {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: #997b66;
 }
 
 p {
@@ -75,18 +61,27 @@ p a {
   background-position: center;
   background-size: cover;
 }
-.backg-1 div {
+
+/* --------- */
+/*  Classes  */
+/* --------- */
+
+.font-white {
+  color: white
+}
+
+/* Nuevas clases */
+.flex {
   display: flex;
+}
+.f-cent-cent {
+  justify-content: center;
+  align-items: center;  
+}
+.f-col {
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: stretch;
-  height: 75%;
 }
-.backg-1 div div {
-  text-align: center;
-  position: relative;
-  height: auto;
-}
+
 
 .backg-2 {
   height: 75vh;
@@ -98,11 +93,6 @@ p a {
   background-size: cover;
 }
 
-.content {
-  flex-direction: column;
-  height: 50vh;
-  background-color: #997b66;
-}
 .content2 {
   display: flex;
   flex-wrap: wrap;
@@ -110,6 +100,21 @@ p a {
   align-items: center;
   height: min 70vh;
   background-color: white;
+}
+
+/* --------- */
+/*    IDS    */
+/* --------- */
+
+#titles-container {
+  justify-content: flex-end;
+  height: 75%;
+}
+
+#learn-container #learning {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #contact {
@@ -188,6 +193,14 @@ p a {
   }
 }
 
+#title-1,
+#title-2,
+#title-3 {
+  text-align: center;
+  /* relative so it appears in front of the background */
+  position: relative;
+}
+
 #title-1 {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
@@ -214,6 +227,7 @@ p a {
   background-color: #000000;
   color: #ffffff;
 }
+
 
 #learn-container {
   display: flex;
@@ -292,6 +306,17 @@ p a {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+/* Portafolio */
 .portafolio-image {
   width: 100%;
   margin: 5px;
