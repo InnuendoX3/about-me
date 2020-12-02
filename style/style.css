@@ -15,52 +15,23 @@ html {
 
 body {
   background-color: #997b66;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
   max-width: 700px;
   margin: 0px 40px;
-  font-family: "Montserrat", sans-serif;
   font-size: 22px;
   line-height: 1.6;
   color: #ffffff;
   text-align: justify;
 }
-@media screen and (max-width: 768px) {
-  p {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 576px) {
-  p {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 400px) {
-  p {
-    font-size: 16px;
-  }
-}
-p a {
-  text-decoration: none;
+
+a {
+  text-decoration: underline dotted;
   color: #ffffff;
 }
 
-#start {
-  height: 100vh;
-  position: relative;
-}
-#start:before {
-  content: "Que es esto?";
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background-image: url("../images/Hallonbergen.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
 
 /* --------- */
 /*  Classes  */
@@ -105,6 +76,22 @@ p a {
 /* --------- */
 /*    IDS    */
 /* --------- */
+
+#start {
+  height: 100vh;
+  position: relative;
+}
+#start:before {
+  content: "Que es esto?";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/Hallonbergen.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
 
 #titles-container {
   justify-content: flex-end;
@@ -266,6 +253,9 @@ p a {
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
+  p {
+    font-size: 20px;
+  }
   #learn-container #learning {
     height: 80px;
   }
@@ -285,6 +275,9 @@ p a {
   }
 }
 @media screen and (max-width: 576px) {
+  p {
+    font-size: 18px;
+  }
   #learn-container #learning {
     height: 50px;
     min-width: 320px;
@@ -303,6 +296,11 @@ p a {
   }
   #learn-container #learning div .hooover {
     width: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  p {
+    font-size: 16px;
   }
 }
 
