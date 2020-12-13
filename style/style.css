@@ -1,5 +1,9 @@
 /* Breakpoints: 400px 576px 768px  */
 
+:root {
+  --main-bg-color: #997b66;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,17 +18,15 @@ html {
 }
 
 body {
-  background-color: #997b66;
+  background-color: var(--main-bg-color);
   font-family: "Montserrat", sans-serif;
 }
 
 p {
-  max-width: 700px;
-  margin: 0px 40px;
   font-size: 22px;
   line-height: 1.6;
   color: #ffffff;
-  text-align: justify;
+  text-align: center;
 }
 
 a {
@@ -53,6 +55,10 @@ a {
   flex-direction: column;
 }
 
+.center-text {
+  text-align: center;
+}
+
 
 .backg-2 {
   height: 75vh;
@@ -70,7 +76,6 @@ a {
   justify-content: space-evenly;
   align-items: center;
   height: min 70vh;
-  background-color: white;
 }
 
 /* --------- */
@@ -81,6 +86,7 @@ a {
   height: 100vh;
   position: relative;
 }
+/* Parallax effect */
 #start:before {
   content: "Que es esto?";
   position: absolute;
@@ -98,19 +104,16 @@ a {
   height: 75%;
 }
 
-#learn-container #learning {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+#my-photo {
+  width: 180px;
+  border-radius: 50%;
+  border: 5px solid white;
 }
 
 #contact {
   flex-direction: column;
   justify-content: space-around;
   height: 100vh;
-}
-#contact p {
-  text-align: center;
 }
 #contact div {
   width: 300px;
@@ -162,13 +165,8 @@ a {
   display: flex;
   align-items: center;
 }
-#corchetes span {
-  font-family: "Montserrat", sans-serif;
-  font-size: 50px;
-  color: #575757;
-}
+/* Delete ? */
 #corchetes #learning-here {
-  text-align: center;
   font-size: 30px;
   width: 180px;
 }
@@ -222,33 +220,31 @@ a {
   justify-content: space-evenly;
   align-items: center;
   height: 50vh;
-  background: #ffffff;
 }
-#learn-container p {
-  text-align: center;
-  color: #000000;
-}
-#learn-container #learning {
+#learning {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: 100px;
 }
-#learn-container #learning div {
+#learning div {
   width: 80px;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#learn-container #learning div img {
+#learning div img {
   width: 40px;
   margin: 5px;
   transition: 0.25s;
   opacity: 0.5;
 }
-#learn-container #learning div img:hover {
+#learning div img:hover {
   width: 60px;
   opacity: 1;
 }
-#learn-container #learning div .hooover {
+#learning div .hooover {
   width: 60px;
   opacity: 1;
 }
@@ -256,21 +252,21 @@ a {
   p {
     font-size: 20px;
   }
-  #learn-container #learning {
+  #learning {
     height: 80px;
   }
-  #learn-container #learning div {
+  #learning div {
     width: 63px;
     height: 63px;
   }
-  #learn-container #learning div img {
+  #learning div img {
     width: 40px;
     margin: 4px;
   }
-  #learn-container #learning div img:hover {
+  #learning div img:hover {
     width: 60px;
   }
-  #learn-container #learning div .hooover {
+  #learning div .hooover {
     width: 60px;
   }
 }
@@ -278,23 +274,23 @@ a {
   p {
     font-size: 18px;
   }
-  #learn-container #learning {
+  #learning {
     height: 50px;
     min-width: 320px;
     justify-content: space-evenly;
   }
-  #learn-container #learning div {
+  #learning div {
     width: 35px;
     height: 35px;
   }
-  #learn-container #learning div img {
+  #learning div img {
     width: 25px;
     margin: 1px;
   }
-  #learn-container #learning div img:hover {
+  #learning div img:hover {
     width: 40px;
   }
-  #learn-container #learning div .hooover {
+  #learning div .hooover {
     width: 40px;
   }
 }
