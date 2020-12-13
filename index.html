@@ -31,17 +31,20 @@
       </div>
    </div>
 
-   <section class="flex f-cent-cent f-col">
-      <div class="flex f-cent-cent f-col">
-         <img id="my-photo" src="./images/JohanProfil.jpg" alt="Johan Photo">
-         <p>Johan Garzon</p>
+   <section class="flex f-col" id="my-information">
+
+      
+      <div class="subcontent flex f-cent-cent f-col" id="my-card">
+         <img class="subcontent" id="my-photo" src="./images/JohanProfil.jpg" alt="Johan Photo">
+         <h1 class="supertitle">Johan Garzon</h1>
          <p>Full Stack Web Developer - student</p>
          <p>Studying at <a href="https://nackademin.se/" target="blank">Nackademin</a></p>
       </div>
 
-      <div id="learn-container">
-         <h1>Skills</h1>
-   
+      <div class="subcontent" id="learn-container">
+         <h1 class="supertitle">Skills</h1>
+         <p id="learning-here" class="center-text"><!-- Skill texts --></p>
+         
          <div id="learning">
             <div>
                <img id="log-0" src="images/logos/Html5.svg" alt="HTML logo">
@@ -68,12 +71,22 @@
                <img id="log-7" src="images/logos/Bootstrap.svg" alt="Bootstrap logo">
             </div>
          </div>
-   
-         <div id="corchetes">
-            <p id="learning-here"></p>
+      </div>
+      
+      <div class="subcontent">
+         <h1 class="supertitle">Portfolio</h1>
+         <div>
+            <h2 class="center-text">Clashing Time</h2>
+            <p>
+               Clashing Time is a web application that count how much time a user plays Clash Royale daily. 
+               Developed with NodeJs, ExpressJs and MongoDB. Use EJS as template view engine.
+            </p>
+            <div class="flex f-jc-evenly">
+               <a href="./portfolio.html">Screenshots</a>
+               <a href="http://clashingtime.herokuapp.com/" target="_blank">Website</a>
+            </div>
          </div>
       </div>
-
    </section>
 
 
