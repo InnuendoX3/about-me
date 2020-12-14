@@ -5,9 +5,9 @@ $(document).ready(function() {
       "CSS",
       "JavaScript",
       "NodeJS",
-      "MongoDB",
+      "React",
       "Git",
-      "GitHub",
+      "MongoDB",
       "Bootstrap"
    ];
 
