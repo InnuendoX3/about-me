@@ -276,9 +276,12 @@ a {
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
-  p, a {
+  p {
     font-size: 20px;
     margin: 5px 8px;
+  }
+  a {
+    font-size: 20px;
   }
   #learning {
     height: 80px;
