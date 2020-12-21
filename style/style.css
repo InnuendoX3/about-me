@@ -189,7 +189,6 @@ a {
   min-height: 100vh;
 }
 #contact_icons {
-  padding: 40px 0px;
   width: 300px;
   display: flex;
   justify-content: space-between;
@@ -199,10 +198,10 @@ a {
   height: 45px;
 }
 #icon-linked {
-  height: 40px;
+  height: 45px;
 }
 #icon-github {
-  height: 38px;
+  height: 45px;
 }
 #contact a span {
   height: 80px;
@@ -323,6 +322,11 @@ a {
   }
   #learning div .hooover {
     width: 40px;
+  }
+  #contact_icons {
+    width: 250px;
+    margin: 40px ;
+    padding: 40px 0;
   }
   .supertitle {
     font-size: 2em;
