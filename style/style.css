@@ -185,11 +185,13 @@ a {
 }
 
 #contact {
+  padding: 40px 0px;
   flex-direction: column;
   justify-content: space-around;
-  height: 100vh;
+  min-height: 100vh;
 }
-#contact div {
+#contact_icons {
+  padding: 40px 0px;
   width: 300px;
   display: flex;
   justify-content: space-between;
