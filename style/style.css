@@ -195,11 +195,6 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 576px) {
-  #contact div {
-    width: 60%;
-  }
-}
 #icon-mail {
   height: 45px;
 }
@@ -283,6 +278,7 @@ a {
 @media screen and (max-width: 768px) {
   p, a {
     font-size: 20px;
+    margin: 5px 8px;
   }
   #learning {
     height: 80px;
