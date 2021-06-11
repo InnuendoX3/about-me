@@ -17,7 +17,7 @@ $(document).ready(function() {
          setTimeout(writeList, index * 1000);
          function writeList() {
             $("#learning div img").removeClass("hooover");
-            $("#learning-here").text(value).hide().fadeIn("slow");
+            $("#skills-text").text(value).hide().fadeIn("slow");
             $("#log-" + index).addClass("hooover");
          }
          if (index == learning.length - 1) {
