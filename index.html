@@ -33,19 +33,19 @@
       </div>
    </div>
 
-   <section class="information">
+   <section class="middle-section">
 
-      <section class="card">
-         <img class="card__photo" src="./images/JohanProfil.jpg" alt="Johan Photo">
+      <section class="johan-info">
+         <img class="johan-info__photo" src="./images/JohanProfil.jpg" alt="Johan Photo">
          <h1 class="supertitle">Johan Garzon</h1>
-         <div class="card__profession">Full Stack Web Developer</div>
+         <div class="johan-info__profession">Full Stack Web Developer</div>
       </section>
 
       <section class="skills" >
          <h1 class="supertitle">Skills</h1>
          <div class="skills__skill-text" id="skills-text"><!-- Skill texts --></div>
          
-         <div id="learning">
+         <div id="skills-container">
             <div>
                <img id="log-0" src="images/logos/Html5.svg" alt="HTML logo">
             </div>
@@ -73,41 +73,41 @@
          </div>
       </section>
       
-      <section class="subcontent">
-         <h1 class="supertitle" id="portfolio">Portfolio</h1>
+      <section class="portfolio" id="portfolio-section">
+         <h1 class="supertitle">Portfolio</h1>
 
-         <div class="portafolio-item">
-            <h2 class="center-text subtitle">It Is Written</h2>
+         <div class="card">
+            <h2 class="card__title">It Is Written</h2>
             <p>
                An application that helps remembering Bible passages. Builded up with 
                MongoDB, Express, React and NodeJs.
             </p>
-            <div class="flex f-jc-evenly">
+            <div class="card__footer">
                <a href="./it-is-written.html">More info</a>
                <a href="https://www.itiswritten.se/" target="_blank">Website</a>
             </div>
          </div>
 
-         <div class="portafolio-item">
-            <h2 class="center-text subtitle">Clashing Time</h2>
+         <div class="card">
+            <h2 class="card__title">Clashing Time</h2>
             <p>
                Clashing Time is a web application that count how much time a user plays Clash Royale daily. 
                Developed with NodeJs, ExpressJs and MongoDB. Use EJS as template view engine.
             </p>
-            <div class="flex f-jc-evenly">
+            <div class="card__footer">
                <a href="./clashing-time.html">More info</a>
                <a href="http://clashingtime.herokuapp.com/" target="_blank">Website</a>
             </div>
          </div>
 
-         <div class="portafolio-item">
-            <h2 class="center-text subtitle">Star Wars People</h2>
+         <div class="card">
+            <h2 class="card__title">Star Wars People</h2>
             <p>
                This application shows a list of all characters of Star Wars, giving details on
                each character. Has list pagination and a search function to look after some specific name.
                Star Wars People has been built with React and deployed on Heroku. 
             </p>
-            <div class="flex f-jc-evenly">
+            <div class="card__footer">
                <a href="./star-wars-people.html">More info</a>
                <a href="https://starwarspeople.herokuapp.com/" target="_blank">Website</a>
             </div>
@@ -121,7 +121,7 @@
       <!-- Image on tricycle -->
    </div>
 
-   <section class="flex f-cent-cent" id="contact">
+   <section class="bottom-section" id="bottom-section">
       <div class="flex f-col">
          <p>
             Now  I'm ready for releasing the training wheels!
@@ -135,21 +135,21 @@
             this experience at your organization.
          </p>
       </div>
-      <div id="contact_icons">
+      <div class="contact-icons">
          <a href="mailto:johanprograma@hotmail.com">
-            <img src="images/icons/icons8-mail.png" id="icon-mail">
+            <img src="images/icons/icons8-mail.png" class="icon">
          </a>
          <a href="http://www.linkedin.com/in/johan-garzon-a50b9b13a" target="blank">
-            <img src="images/icons/icons8-linkedin.png" id="icon-linked">
+            <img src="images/icons/icons8-linkedin.png" class="icon">
          </a>
          <a href="https://github.com/InnuendoX3" target="blank">
-            <img src="images/icons/icons8-github.png" id="icon-github">
+            <img src="images/icons/icons8-github.png" class="icon">
          </a>
 
       </div>
       <a href="#start">
          <span>
-            <img src="images/icons/icons8-up.png" id="icon-up" class="bounce">
+            <img src="images/icons/icons8-up.png" class="icon-up">
          </span>
       </a>
    </section>

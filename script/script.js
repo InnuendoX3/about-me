@@ -16,7 +16,7 @@ $(document).ready(function() {
       $.each(learning, function (index, value) {
          setTimeout(writeList, index * 1000);
          function writeList() {
-            $("#learning div img").removeClass("hooover");
+            $("#skills-container div img").removeClass("hooover");
             $("#skills-text").text(value).hide().fadeIn("slow");
             $("#log-" + index).addClass("hooover");
          }
