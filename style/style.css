@@ -144,6 +144,15 @@ body {
   justify-content: space-evenly
 }
 
+.backg-2 {
+  height: 75vh;
+  filter: contrast(125%) brightness(73%) sepia(100%);
+  background-image: url("../images/YoBici.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
 
 .bottom-section {
   display: flex;
@@ -219,7 +228,7 @@ a {
 }
 .f-cent-cent {
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 .f-col {
   flex-direction: column;
@@ -236,99 +245,33 @@ a {
 
 
 
-.backg-2 {
-  height: 75vh;
-  filter: contrast(125%) brightness(73%) sepia(100%);
-  background-image: url("../images/YoBici.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
+
 
 .content2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
-  height: min 70vh;
 }
+
 .init-page-space {
   margin: 10vh 0;
 }
-
-/* .portafolio-item {
-  padding: 3vh 0;
-} */
 
 .some-h-space {
   padding: 3vh 0;
 }
 
-.links-container {
+.project__links-container {
+  display: flex;
+  justify-content: space-evenly;
   width: 100%;
+  padding: 3vh 0;
 }
+
 
 /* --------- */
 /*    IDS    */
 /* --------- */
-
-/* #start {
-  height: 100vh;
-  position: relative;
-}
-
-#start:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  filter: contrast(125%) brightness(73%) sepia(100%);
-  background-image: url("../images/Hallonbergen.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-} */
-
-/* #titles-container {
-  justify-content: flex-end;
-  height: 75%;
-} */
-
-
-/* #title-1 {
-  font-size: 20px;
-  padding: 5px 0px;
-  background-color: var(--main-bg-color);
-  color: var(--text-color);
-} */
-
-/* #title-2 {
-  font-family: "Dancing Script", cursive;
-  font-size: 34px;
-  padding: 5px 8px;
-  background-color: rgba(255, 255, 255, 0.451);
-  color: var(--main-bg-color)
-} */
-
-
-/* #title-3 {
-  font-size: 28px;
-  padding: 5px 0px;
-  background-color: var(--main-bg-color);
-  color: var(--text-color);
-} */
-
-
-
-
-
-
-
-
-
-
 
 #skills-container {
   display: flex;
@@ -432,30 +375,48 @@ a {
 
 
 
+/* Project */
 
+.project__container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 10vh 0;
+}
 
-/* Portafolio */
-.portafolio-image {
+.project__description {
+  padding: 3vh 0;
+}
+
+.project__img__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 3vh 0;
+}
+
+.project__img {
   width: 100%;
   margin: 5px;
 }
-.portafolio-image-anchor {
-  width: 400px;
+.project__img-anchor {
+  width: 40vh;
   margin: 5px;
 }
 @media screen and (max-width: 768px) {
-  .portafolio-image-anchor {
+  .project__img-anchor {
     width: 300px;
   }
 }
 @media screen and (max-width: 576px) {
-  .portafolio-image-anchor {
+  .project__img-anchor {
     width: 250px;
   }
 }
 @media screen and (max-width: 400px) {
-  .portafolio-image-anchor {
+  .project__img-anchor {
     width: 200px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
