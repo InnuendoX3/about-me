@@ -3,6 +3,7 @@
 :root {
   --main-bg-color: #2F291F;
   --text-color: #A99775;
+  --brighty: #f1dca7
 }
 
 * {
@@ -30,7 +31,7 @@ body {
 
 p {
   max-width: 640px;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.6;
   color: var(--text-color);
   text-align: justify;
@@ -39,9 +40,8 @@ p {
 }
 
 a {
-  text-decoration: underline dotted;
-  color: var(--text-color);
-  font-size: 22px;
+  color: var(--brighty);
+  font-size: 18px;
 }
 
 
@@ -57,7 +57,7 @@ a {
 .supertitle {
   font-size: 3em;
   margin: 15px 0;
-  color: #f1dca7;
+  color: var(--brighty);
 }
 
 
@@ -142,7 +142,7 @@ a {
 .johan-info__photo {
   width: 180px;
   border-radius: 50%;
-  border: 5px solid #f1dca7;
+  border: 5px solid var(--brighty);
 }
 
 .johan-info__profession {
@@ -161,10 +161,15 @@ a {
   padding: 5vh 0;
 }
 
+.skills__skill-text-container {
+  /* Avoid movement of neighbor divs when hiding text*/
+  min-height: 20px;
+}
 .skills__skill-text {
   color: var(--text-color);
   text-align: center;
   width: 180px;
+  height: 20px;
 }
 
 
@@ -181,14 +186,17 @@ a {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 400px;
   margin: 4vh 3vh;
-  padding: 4vh 35px 6vh;
+  padding: 4vh 35px;
   border-top-left-radius: 37px 140px;
   border-top-right-radius: 23px 130px;
   border-bottom-left-radius: 110px 19px;
   border-bottom-right-radius: 120px 24px;
-  border: solid 3px #f1dca7;
+  border: solid 2px var(--brighty);
   background-color: #2b251c;
   /*cursor: pointer;*/
 }
@@ -200,19 +208,29 @@ a {
 }
 .card__title {
   text-align: center;
-  color: #f1dca7
+  color: var(--brighty)
+}
+.card__technologies {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2vh 0;
+}
+.card__logo{
+  height: 30px;
 }
 .card__footer {
   display: flex;
-  justify-content: space-evenly
+  justify-content: space-evenly;
+  margin: 2vh 0 0 0;
 }
+
 
 /****************/
 /* Backgraund 2 */
 /****************/
 
 .backg-2 {
-  height: 75vh;
+  height: 40vh;
   filter: contrast(125%) brightness(73%) sepia(100%);
   background-image: url("../images/YoBici.jpg");
   background-repeat: no-repeat;
@@ -228,12 +246,11 @@ a {
 
 .bottom-section {
   display: flex;
-  justify-content: center;
-  align-items: center;  
-  padding: 40px 0px;
   flex-direction: column;
-  justify-content: space-around;
-  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;  
+  padding: 3vh 0px;
+  min-height: 60vh;
 }
 
 .contact-icons {
@@ -243,8 +260,13 @@ a {
   align-items: center;
 }
 
-.icon {
+.contact-icon {
   height: 45px;
+  transition: all 0.13s ease-in;
+}
+
+.contact-icon:hover {
+  transform: rotate(45deg);
 }
 
 .icon-up {
@@ -304,11 +326,11 @@ a {
 
 @media screen and (max-width: 768px) {
   p {
-    font-size: 20px;
+    font-size: 17px;
     margin: 5px 8px;
   }
   a {
-    font-size: 20px;
+    font-size: 17px;
   }
   #skills-container {
     height: 80px;
@@ -330,7 +352,7 @@ a {
 }
 @media screen and (max-width: 576px) {
   p, a {
-    font-size: 18px;
+    font-size: 16px;
   }
   #skills-container {
     height: 50px;
