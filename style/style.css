@@ -125,7 +125,7 @@ a {
 .middle-section {
   display: flex;
   flex-direction: column;
-  margin: 10vh 0px;
+  margin: 10vh 0px 4vh;
 }
 
 
@@ -174,8 +174,29 @@ a {
   padding: 5vh 0;
 }
 
+.portfolio__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .card {
-  padding: 3vh 0;
+  max-width: 400px;
+  margin: 4vh 3vh;
+  padding: 4vh 35px 6vh;
+  border-top-left-radius: 37px 140px;
+  border-top-right-radius: 23px 130px;
+  border-bottom-left-radius: 110px 19px;
+  border-bottom-right-radius: 120px 24px;
+  border: solid 3px #f1dca7;
+  background-color: #2b251c;
+  /*cursor: pointer;*/
+}
+.card:hover{
+  background-color: var(--main-bg-color);
+}
+.card__description {
+  font-size: 18px;
 }
 .card__title {
   text-align: center;
